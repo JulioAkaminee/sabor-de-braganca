@@ -58,19 +58,7 @@
                 100% { background-position: 200% 0; }
             }
         }
-    </style>
-
-    <!-- AOS Visibility Fix -->
-    <style>
-        /* Garante que elementos AOS no viewport inicial fiquem visíveis */
-        [data-aos]:not(.aos-animate) {
-            opacity: 1 !important;
-            transform: none !important;
-            transition: none !important;
-        }
-    </style>
-
-</head>
+    </style></head>
 <body class="bg-slate-50 text-slate-900 antialiased overflow-x-hidden">
     <!-- Loading Screen -->
     <div id="loader" class="fixed inset-0 bg-slate-900 z-50 flex items-center justify-center transition-opacity duration-700">
@@ -452,5 +440,13 @@
                 navbar.classList.remove('shadow-md');
             }
         });
-    </script></body>
+    </script><!-- AOS Fix -->
+<style>
+[data-aos]:not(.aos-animate) {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+</style>
+</body>
 </html>
