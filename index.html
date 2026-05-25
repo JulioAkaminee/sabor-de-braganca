@@ -59,6 +59,17 @@
             }
         }
     </style>
+
+    <!-- AOS Visibility Fix -->
+    <style>
+        /* Garante que elementos AOS no viewport inicial fiquem visíveis */
+        [data-aos]:not(.aos-animate) {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: none !important;
+        }
+    </style>
+
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased overflow-x-hidden">
     <!-- Loading Screen -->
@@ -441,6 +452,5 @@
                 navbar.classList.remove('shadow-md');
             }
         });
-    </script>
-</body>
+    </script></body>
 </html>
