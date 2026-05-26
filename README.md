@@ -1,39 +1,66 @@
-# Sabor de Bragança - Restaurante & Pizzaria
+# Sabor de Bragança — Restaurante & Pizzaria Artesanal
 
-Landing page profissional para o restaurante **Sabor de Bragança**, localizado em Bragança Paulista, SP.
+Landing page premium para o restaurante **Sabor de Bragança**, em Bragança Paulista, SP.
+Single-file (`index.html`), sem build step.
 
 ## Sobre o Projeto
 
-Site desenvolvido para demonstração de serviços de criação de landing pages da **Akamine Web Studio**. O projeto apresenta um restaurante fictício com identidade visual forte, focado em transmitir acolhimento e qualidade culinária.
+Site desenvolvido como demonstração de criação de landing pages da **Akamine Web Studio**.
+Apresenta um restaurante fictício com identidade visual quente e apetitosa (espresso + dourado +
+creme), focada em transmitir acolhimento, tradição e qualidade culinária.
 
 ## Tecnologias
 
-- HTML5 Semântico
-- Tailwind CSS (via CDN)
-- AOS - Animate On Scroll
-- Lucide Icons
-- Google Fonts (Playfair Display SC + Karla)
+- HTML5 semântico (single-file)
+- Tailwind CSS (via CDN) com tema customizado e `@layer`
+- Lucide Icons (via CDN)
+- Google Fonts — **Fraunces** (display serifada) + **Manrope** (sans)
+- JavaScript puro (sem frameworks pesados)
 
-## Características
+## Experiência & UI
 
-- Design responsivo (mobile-first)
-- Animações de scroll com AOS
-- Efeitos hover em cards e imagens
-- Loading screen animada
-- Navegação fixa com blur
-- Seções: Hero, Destaques, Cardápio, Ambiente, Depoimentos, CTA, Footer
-- Imagens reais do Unsplash referentes ao nicho gastronômico
+- **Design premium**: glassmorphism, gradientes sutis, sombras em camadas, grid de agência
+- **Tipografia fluida** com `clamp()` e hierarquia clara
+- **Paleta refinada** mantendo a identidade gastronômica
 
-## Visualização
+## Animações
 
-Acesse o site online: [sabor-de-braganca.github.io](https://sabor-de-braganca.github.io)
+- Reveal on scroll com **Intersection Observer** (substitui o AOS)
+- **Stagger** automático em grids de cards e galeria
+- **Parallax** suave no hero
+- Contadores animados nas estatísticas
+- Micro-interações: hover lift, glow, image zoom, shine nos botões, marquee
+- **Cursor customizado** (apenas em ponteiros finos)
+
+## Responsividade
+
+- Mobile-first com breakpoints precisos
+- Menu hambúrguer **animado** com `aria-expanded`
+- Áreas de toque confortáveis
+
+## Performance
+
+- `loading="lazy"` nativo nas imagens (e `fetchpriority="high"` no hero)
+- `preconnect` / `dns-prefetch` para fontes, CDNs e bancos de imagens
+- Animações apenas com `transform` / `opacity` (GPU-accelerated)
+
+## Acessibilidade
+
+- Contraste WCAG AA
+- Skip link, landmarks semânticas (`header`/`main`/`footer`) e `aria-label`s
+- Focus states visíveis e on-brand
+- Scrollspy com `aria-current` na navegação
+- `prefers-reduced-motion` respeitado (desativa animações e parallax)
+
+## Seções
+
+Hero (com estatísticas) · Faixa marquee · Destaques · Cardápio · Ambiente · Depoimentos · CTA · Footer
 
 ## Desenvolvimento
 
-**Desenvolvido por:** [Akamine Web Studio](https://github.com/JulioAkaminee)  
-**Local:** Bragança Paulista, SP  
-**Ano:** 2024
+**Desenvolvido por:** [Akamine Web Studio](https://github.com/JulioAkaminee)
+**Local:** Bragança Paulista, SP
 
 ---
 
-> Este é um site de demonstração. As informações de contato são fictícias.
+> Site de demonstração. As informações de contato são fictícias.
